@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import { SidebarData } from './SidebarData';
-import SubMenu from './SubMenu';
+import SidebarMenu from './SidebarMenu';
 import { IconContext } from 'react-icons/lib';
 
 const Nav = styled.div`
@@ -59,9 +59,7 @@ const Sidebar = () => {
             <NavIcon to='#'>
               <AiIcons.AiOutlineClose onClick={showSidebar} />
             </NavIcon>
-            {SidebarData.map((item, index) => {
-              return <SubMenu item={item} key={index} />;
-            })}
+            <SidebarMenu data={SidebarData}/>
           </SidebarWrap>
         </SidebarNav>
       </IconContext.Provider>

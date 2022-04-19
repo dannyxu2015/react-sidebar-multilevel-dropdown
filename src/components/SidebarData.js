@@ -2,90 +2,163 @@ import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
-import * as RiIcons from 'react-icons/ri';
 
 export const SidebarData = [
   {
-    title: 'Overview',
+    label: 'Overview',
     path: '/overview',
     icon: <AiIcons.AiFillHome />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-
+    id: 1,
     subNav: [
       {
-        title: 'Users',
+        label: 'Users',
         path: '/overview/users',
-        icon: <IoIcons.IoIosPaper />
+        icon: <IoIcons.IoIosPaper />,
+        id: 2,
+        subNav:[]
       },
       {
-        title: 'Revenue',
+        label: 'Revenue',
         path: '/overview/revenue',
-        icon: <IoIcons.IoIosPaper />
+        icon: <IoIcons.IoIosPaper />,
+        id: 3,
+        subNav:[]
       }
     ]
   },
   {
-    title: 'Reports',
+    label: 'Reports',
     path: '/reports',
     icon: <IoIcons.IoIosPaper />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-
+    id: 4,
     subNav: [
       {
-        title: 'Reports',
+        label: 'Reports 1',
         path: '/reports/reports1',
         icon: <IoIcons.IoIosPaper />,
-        cName: 'sub-nav'
+        id: 5,
+        subNav: [
+          {
+            label: 'rep11',
+            path: '/reports/reports1/rep11',
+            icon: <IoIcons.IoIosPaper />,
+            id: 6, 
+            subNav: [
+              {
+                label: 'rep111',
+                path: '/reports/reports1/rep11',
+                icon: <IoIcons.IoIosPaper />,
+                id: 7,
+                subNav: []
+              },
+              {
+                label: 'rep112',
+                path: '/reports/reports1/rep12',
+                icon: <IoIcons.IoIosPaper />,
+                id: 8,
+                subNav: []
+              }
+            ]    
+          },
+          {
+            label: 'rep12',
+            path: '/reports/reports1/rep12',
+            icon: <IoIcons.IoIosPaper />,
+            id: 9,
+            subNav: [
+              {
+                label: 'rep121',
+                path: '/reports/reports1/rep11',
+                icon: <IoIcons.IoIosPaper />,
+                id: 11,
+                subNav: []
+              },
+              {
+                label: 'rep122',
+                path: '/reports/reports1/rep12',
+                icon: <IoIcons.IoIosPaper />,
+                id: 12,
+                subNav: []
+              }
+            ]
+
+          }
+        ]
+    
       },
       {
-        title: 'Reports 2',
+        label: 'Reports 2',
         path: '/reports/reports2',
         icon: <IoIcons.IoIosPaper />,
-        cName: 'sub-nav'
+        id: 13, 
+        subNav: [
+          {
+            label: 'rep21',
+            path: '/reports/reports1/rep11',
+            icon: <IoIcons.IoIosPaper />,
+            id: 14,
+            subNav: []
+          },
+          {
+            label: 'rep22',
+            path: '/reports/reports1/rep12',
+            icon: <IoIcons.IoIosPaper />,
+            id: 15,
+            subNav: []
+          }
+        ]    
+
       },
       {
-        title: 'Reports 3',
+        label: 'Reports 3',
         path: '/reports/reports3',
-        icon: <IoIcons.IoIosPaper />
+        icon: <IoIcons.IoIosPaper />,
+        id: 16,
+        subNav: []
       }
     ]
   },
   {
-    title: 'Products',
+    label: 'Products',
     path: '/products',
-    icon: <FaIcons.FaCartPlus />
+    icon: <FaIcons.FaCartPlus />,
+    id: 17,
+    subNav: []
   },
   {
-    title: 'Team',
+    label: 'Team',
     path: '/team',
-    icon: <IoIcons.IoMdPeople />
+    icon: <IoIcons.IoMdPeople />,
+    id: 18,
+    subNav: []
   },
   {
-    title: 'Messages',
+    label: 'Messages',
     path: '/messages',
     icon: <FaIcons.FaEnvelopeOpenText />,
-
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-
+    id: 19,
     subNav: [
       {
-        title: 'Message 1',
+        label: 'Message 1',
         path: '/messages/message1',
-        icon: <IoIcons.IoIosPaper />
+        icon: <IoIcons.IoIosPaper />,
+        id: 20,
+        subNav: []
       },
       {
-        title: 'Message 2',
+        label: 'Message 2',
         path: '/messages/message2',
-        icon: <IoIcons.IoIosPaper />
+        icon: <IoIcons.IoIosPaper />,
+        id: 21,
+        subNav: []
       }
     ]
   },
   {
-    title: 'Support',
+    label: 'Support',
     path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />
+    icon: <IoIcons.IoMdHelpCircle />,
+    id: 22,
+    subNav: []
   }
 ];

@@ -10,6 +10,7 @@
 .home,
 .reports,
 .products,
+.messages,
 .team,
 .reports {
   display: flex;
